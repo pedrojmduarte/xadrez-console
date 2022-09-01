@@ -1,5 +1,6 @@
 ﻿namespace tabuleiro
 {
+    //Classe com as informações das posuções no tabuleiro
     class Posicao
     {
         public int linha { get; set; }

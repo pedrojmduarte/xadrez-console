@@ -1,4 +1,5 @@
-﻿namespace tabuleiro
+﻿//Classe com enumerador de cores para associas às peças
+namespace tabuleiro
 {
     enum Cor
     {
