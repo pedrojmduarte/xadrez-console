@@ -10,10 +10,11 @@ namespace tabuleiro
         public int qteMovimentos { get; protected set; }
         public Tabuleiro tab { get; protected set; }
 
-        //Construtor inicia com qtde de movimentos 0, pois é a posiçao original
-        public Peca(Posicao posicao, Cor cor, Tabuleiro tab)
+        //Construtor inicia com qtde de movimentos 0, pois é a posiçao original.
+        //Posição null pois não sabe qual é a posição
+        public Peca(Cor cor, Tabuleiro tab)
         {
-            this.posicao = posicao;
+            this.posicao = null;
             this.cor = cor;
             this.tab = tab;
             this.qteMovimentos = 0;
