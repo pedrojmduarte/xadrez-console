@@ -19,17 +19,18 @@
             pecas = new Peca[linhas, colunas];
         }
 
-        //Método para retornar a posição da pe
+        //Método para retornar a posição da peça (tipo dela é Peca)
         public Peca peca(int linha, int coluna)
         {
             return pecas[linha, coluna];
         }
 
-        //função para colocar uma peça na posição do tabuleiro
+        //função para colocar uma peça p na posição pos do tabuleiro
 
         public void colocarPeca(Peca p, Posicao pos)
         {
             pecas[pos.linha, pos.coluna] = p;
+            //associa a posição pos ao atributo posição da Peça p
             p.posicao = pos;
         }
 

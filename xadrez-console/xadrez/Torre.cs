@@ -6,7 +6,7 @@ namespace xadrez
     class Torre : Peca
     {
         //Construtor
-        public Torre(Cor cor, Tabuleiro tab) : base(cor, tab)
+        public Torre(Tabuleiro tab, Cor cor) : base(tab, cor)
         {
 
         }

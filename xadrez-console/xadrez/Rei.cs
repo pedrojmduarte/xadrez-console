@@ -1,4 +1,5 @@
 ﻿using tabuleiro;
+//todas as classes das peças tem relação de herança com a classe Pecas
 
 namespace xadrez
 {
@@ -6,7 +7,7 @@ namespace xadrez
     class Rei : Peca 
     {
         //Construtor
-        public Rei(Cor cor, Tabuleiro tab) : base(cor, tab)
+        public Rei(Tabuleiro tab, Cor cor) : base(tab, cor) //repassa a instrução para a classe peça
         {
 
         }
