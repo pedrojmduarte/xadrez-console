@@ -11,20 +11,11 @@ namespace xadrez_console
         static void Main(string[] args)
         {
 
-            try
-            {
-                Tabuleiro tab = new Tabuleiro(8, 8);
-                //vai colocando as peças no tabuleiro através do método colocarPeca da classe Tabuleiro, passando a peça e sua posição
-                tab.colocarPeca(new Torre(tab, Cor.Preta), new Posicao(0, 0));
-                tab.colocarPeca(new Torre(tab, Cor.Preta), new Posicao(1, 3));
-                tab.colocarPeca(new Rei(tab, Cor.Preta), new Posicao(0, 2));
+            PosicaoXadrez pos = new PosicaoXadrez('c', 7);
 
-                Tela.imprimirTabuleiro(tab);
-            }
-            catch (TabuleiroException e)
-            {
-                Console.WriteLine(e.Message);
-            }
+            Console.WriteLine(pos);
+
+            Console.WriteLine(pos.ToPosicao());
 
             Console.ReadLine();
         }
