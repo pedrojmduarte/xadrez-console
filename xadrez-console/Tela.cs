@@ -1,11 +1,13 @@
-﻿using System;
+﻿//classe que imprime o tabuleiro na tela. Está na camada de aplicação
+using System;
 using tabuleiro;
 
 namespace xadrez_console
 {
-    //Classe para imprimir o tabuleiro na camada de apresentação
     class Tela
     {
+        //método estático (São membros que fazem sentido independentemente de objetos. Não precisam de objeto para serem chamados.São chamados a partir do próprio nome da classe.
+        //recebe o tabuleiro e o imprime na tela
         public static void imprimirTabuleiro(Tabuleiro tab)
         {
            

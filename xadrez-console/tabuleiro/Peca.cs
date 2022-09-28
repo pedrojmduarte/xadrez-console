@@ -1,11 +1,10 @@
 ﻿//Classe com as características das peças do xadrez
-
 namespace tabuleiro
 {
     class Peca
     {
         // As classes com protected, não pode ser modificadas por classes externas
-        public Posicao posicao { get; set; }
+        public Posicao posicao { get; set; } //associando com a classe Posicao, que é uma característica da peça
         public Cor cor { get; protected set; }
         public int qteMovimentos { get; protected set; }
         public Tabuleiro tab { get; protected set; }
