@@ -53,6 +53,21 @@
             p.posicao = pos;
         }
 
+        //método para remover peça
+
+        public Peca retirarPeca(Posicao pos)
+        {
+            if (peca(pos) == null)
+            {
+                return null;
+            }
+            Peca aux = peca(pos);
+            aux.posicao = null;
+            pecas[pos.linha, pos.coluna] = null;
+            return aux;
+           
+        }
+
         //método para testar se uma posição é válida
         public bool posicaoValida(Posicao pos)
         {
