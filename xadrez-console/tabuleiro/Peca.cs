@@ -1,7 +1,7 @@
 ﻿//Classe com as características das peças do xadrez
 namespace tabuleiro
 {
-    class Peca
+    abstract class Peca
     {
         // As classes com protected, não pode ser modificadas por classes externas
         public Posicao posicao { get; set; } //associando com a classe Posicao, que é uma característica da peça
@@ -24,6 +24,14 @@ namespace tabuleiro
         {
             qteMovimentos++;
         }
+
+        //método com matriz de movimentos possíveis da peça, precisa ser abstrato, porque cada peça vai ter uma matriz diferente
+        public abstract bool[,] movimentosPossiveis()
+        {
+
+        }
+
+
 
     }
 }
